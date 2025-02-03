@@ -1,0 +1,36 @@
+MOD550 ASSIGNMENT 1 - POINT 8
+Name: Dea Lana Asri - 277575
+Email: dl.asri@stud.uis.no
+Github: dladea
+Title: Assessment on Coding Standards on 3 different Github Repositories
+Description: The assesment will be done in respect to 4 categories: Code Layout, Whitepace in Expressions and Statements, Comments, and Naming Conventions
+
+Github 1: https://github.com/FoucauldE/CSC/blob/494148f94647e8a2d1f5101707c33f8333c85616/csc_lib/visualize.py#L4
+Accessed on February 2, 2025
+1. Code Layout: 
+- Indentation is consistent by using 4 spaces, 
+- some lines are too long (more than 79 characters), like line 29.
+2. Whitepace in Expressions and Statements**: Whitespaces are used consistently which is good for readability
+3. Comments: 
+- The use of comments is enough, 
+- The function is missing docstring.
+4. Naming Conventions: Naming conventions is followed well for file name, function, and variables
+
+Github 2: https://github.com/noturlee/Titanic-DataModel/blob/main/DataSetTitanic/TitanicAnalysis.py
+Accessed on February 3, 2025
+1. Code Layout: Indentation is consistent by using 4 spaces and lines are not too long
+2. Whitepace in Expressions and Statements: Whitespaces are used consistently which is good for readability
+3. Comments: It does not have comments to explain the code
+4. Naming Conventions: Variable names used are descriptive and follow the naming conventions
+
+Github 3: https://github.com/scorpionhiccup/StockPricePrediction/blob/master/scripts/preprocessing.py
+Accessed on February 3, 2025
+1. Code Layout: 
+- Indentation is consistent by using 4 spaces, 
+- Import should usually be in separate lines, 
+- Some lines are too long (more than 79 characters), like line 65.
+2. Whitepace in Expressions and Statements: Whitespace is used consistently which is good for readability
+3. Comments: 
+- It does not have comments to explain the code, 
+- The function is missing docstring.
+4. Naming Conventions: Naming conventions is followed well for function and variables
