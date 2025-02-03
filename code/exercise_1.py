@@ -1,21 +1,32 @@
 import matplotlib.pyplot as plt
 import pandas as pd
-
+import numpy as np
+from sklearn.metrics import r2_score
 
 # Assignment Point 7
 
 # Read the dataset
+# The dataset is created by Svetlana Andrusenko and can be found in https://github.com/svetaandrusenko/MOD550_Andrusenko/tree/main/MOD550/data
 df = pd.read_csv('../data/dataset.csv')
 
 # Guessing truth function
 x1 = df['x'][:99]
 y1 = df['y'][:99]
 x1_guess = x1.sort_values()
-y1_guess = x1_guess**2 + 2
+y1_guess = x1_guess**2 + 2  # Quadratic function based on metadata
+
+# Regression
+model = np.polyfit(x1, y1, 2)
+x1_regression = np.linspace(-20, 20, 100)
+y1_regression = np.polyval(model, x1_regression)
+
+print(f"Model based on regression: {model}")
+print(f"R^2 Metric: {r2_score(y1, np.polyval(model, x1))}")
 
 plt.scatter(x1, y1, color='b', label='Original Data - Quadratic')
-plt.plot(x1_guess, y1_guess, color='g', label='Guessed Data - Quadratic')
 plt.scatter(df['x'][100:], df['y'][100:], color='r', label='Original Data - Random')
+plt.plot(x1_guess, y1_guess, color='g', label='Guessed Data - Quadratic')
+plt.plot(x1_regression, y1_regression, color='y', label='Regression Data - Quadratic')
 plt.xlim(-25, 25)
 plt.ylim(-600, 600)
 
