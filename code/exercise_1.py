@@ -7,7 +7,8 @@ from sklearn.metrics import r2_score
 
 # Read the dataset
 # The dataset is created by Svetlana Andrusenko and can be found in https://github.com/svetaandrusenko/MOD550_Andrusenko/tree/main/MOD550/data
-df = pd.read_csv('../data/dataset.csv')
+url = "https://raw.githubusercontent.com/svetaandrusenko/MOD550_Andrusenko/main/MOD550/data/my_data/dataset.csv"
+df = pd.read_csv(url)
 
 # Guessing truth function
 x1 = df['x'][:99]
